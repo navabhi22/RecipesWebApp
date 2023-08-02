@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recipes Point</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section id="Home">
+        <nav>
+            <div class="logo">
+                <img src="data:image/png;base64,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" >
+
+            </div>
+
+            <ul>
+                <li><a href="/recipes">Home</a></li>
+                <li><a href="">Dinner</a></li>
+                <li><a href="">Meals</a></li>
+                <li><a href="">Ingredients</a></li>
+                <li><a href="">Occasions</a></li>
+                <li><a href="">Cuisine</a></li>
+                <li><a href="">Tips</a></li>
+            </ul>
+
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+        </nav>
+        <div class="menu" id="Menu">
+            <h1>New<span>Recipes</span></h1>
+            <div class="new-recipe">
+                <form action="/recipes" method="POST">
+                    <div class="new-recipe-input">
+                        <label for="name">Recipe Name:</label>
+                        <input name="recipeName" id="name">
+                    </div>
+                    <div class="new-recipe-input">
+                        <label for="img">Image link:</label>
+                        <input name="recipeImg" id="img">
+                    </div>
+                    <div class="new-recipe-input">
+                        <label for="input">Write a Desciption:</label>
+                        <textarea name="recipeDesc" id="" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="new-recipe-input">
+                        <button type="submit">Add</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_main">
+    
+                <div class="footer_tag">
+                    <h2>Location</h2>
+                    <p>India, Delhi</p>
+                </div>
+    
+                <div class="footer_tag">
+                    <h2>Contact</h2>
+                    <p>+91 12 3456 789</p>
+                    <p>recipespoint@wahoo.com</p>
+                </div>
+    
+                <div class="footer_tag">
+                    <h2>Follow Us </h2>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+    
+            </div>
+    
+        </footer>
+    
+    </section>
+
+    
+</body>
+</html>
